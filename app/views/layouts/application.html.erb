@@ -9,6 +9,7 @@
 <body>
     <header>
         <div class="col-xs-3">
+          <%= link_to root_path do %>
             <div class="circle">
                 <br />
                     They
@@ -17,12 +18,13 @@
                 <br />
                     InterWebz
           </div>
+          <% end %>
         </div>
         <div class="col-xs-4 slogan">
             Splurting out the unsolicited advice you never knew you wanted, since 2016.
         </div>
         <div class="col-xs-5 links">
-            <%= link_to 'Contribute', '#' %>
+            <%= link_to 'Contribute', new_quote_path %>
             <%= link_to 'About', '#' %>
         </div>
     </header>
@@ -37,7 +39,7 @@
     <div class="footer">
         <div class="container">
             <div class="col-xs-6">
-              <%= link_to "More??!?!", "#", class: 'next-quote' %>
+              <%= link_to "More??!?!", root_path, class: 'next-quote' %>
             </div>
             <div class="col-xs-6 footer-blurb">
               Proudly made in Brooklyn by ....
